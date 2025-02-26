@@ -9,7 +9,8 @@ function App() {
   // Consumiendo la API con fetch
   useEffect(() => {
     setLoading(true); // Indicamos que la carga está en progreso
-    fetch("http://3.128.206.46/api/pets")
+    fetch("examenrichi.duckdns.org/api/pets")
+
       .then((response) => {
         if (!response.ok) {
           throw new Error("Error en la respuesta de la API");
